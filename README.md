@@ -4,6 +4,7 @@ ELK STACK PROJECTS Installation ANS RUNNING.
 ## Solution Guide: ELK Installation
 ---
 #### 1. Creating a New vNet
+when doing this make sure you pay attention to adding your keys, any mispelled words can effect your machines.
 
 Make sure that you are logged into your personal Azure account, where your cloud security unit VMs are located.
 (MAKE SURE YOU WRITE DOWN YOUR EMAIL OR SAVE IT SOMEWHERE)
@@ -224,3 +225,5 @@ If everything is working correctly, you should see this webpage:
 # your home page should have a net security or others like this ![building azure](https://user-images.githubusercontent.com/89087300/146103332-1fac9ab0-f158-4bf9-92f2-253158c8693d.PNG)
 
 __if its not connected right or your keys are not right you can encounter this error ![Capture](https://user-images.githubusercontent.com/89087300/146103465-305c1cac-92fa-445a-818e-f53b0e122c4b.PNG)
+
+#what we are trying to do is create a diagram on how things connect heres how it should look <img width="988" alt="12HS" src="https://user-images.githubusercontent.com/89087300/146104051-2236c0db-f1f6-4042-90e7-5e18a8f1e675.png">
