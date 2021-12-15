@@ -1,10 +1,12 @@
 # ELK-STACK-PROJECT
-ELK STACK PROJECTS
-## Day 1 Solution Guide: ELK Installation
+ELK STACK PROJECTS Installation ANS RUNNING.
+
+## Solution Guide: ELK Installation
 ---
 #### 1. Creating a New vNet
 
 Make sure that you are logged into your personal Azure account, where your cloud security unit VMs are located.
+(MAKE SURE YOU WRITE DOWN YOUR EMAIL OR SAVE IT SOMEWHERE)
 
 - Create a new vNet located in the same resource group you have been using.
 
@@ -12,7 +14,7 @@ Make sure that you are logged into your personal Azure account, where your cloud
 
    ![](Resources/vNet-images/vNet.png)
 
-Here we are adding it to the `(US) West US` region because all the other resources are in the `(US) East US` region. 
+Here we are adding it to the `(US) West US` region because all the other resources are in the `(US) East US` region. (make sure your regions are all the same except west which will be added to vm.
 
   - Note that _which_ region you select is not important as long as it's a different US region than your other resources.
 
@@ -30,7 +32,7 @@ Here we are adding it to the `(US) West US` region because all the other resourc
 
 - Select your new vNet to view it's details. 
 
-- Under 'Settings' on the left side, select 'Peerings'.
+- Under 'Settings' on the left side, select 'Peerings'. (peerings make sure they connect)
 
 - Click the `+ Add` button to create a new Peering.
 
@@ -80,6 +82,7 @@ Set up a new virtual machine to run ELK.
   romantic_noyce
   sysadmin@Jump-Box-Provisioner:~$
   ```
+__this makes sure the contaier is up and running
 
 - Connect to the Ansible container:
 
@@ -87,6 +90,7 @@ Set up a new virtual machine to run ELK.
   sysadmin@Jump-Box-Provisioner:~$ sudo docker container attach romantic_noyce
   root@6160a9be360e:~#
   ```
+  __this makes sure it connects
 
 - Copy the SSH key from the Ansible container on your jump box:
 
@@ -177,6 +181,8 @@ changed: [10.1.0.4]
 PLAY RECAP *****************************************************************************
 10.1.0.4                   : ok=1    changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0 
 ```
+__if you do not do it right you may encounter and error should look like this ![vm machine](https://user-images.githubusercontent.com/89087300/146103083-c4107689-6137-4558-ad16-685f59ecb5a9.PNG)
+__
 
 - SSH from your Ansible container to your ELK machine to verify the connection before you run your playbook.
 
@@ -214,3 +220,7 @@ You can also choose to send traffic _only_ to the ELK server.
 If everything is working correctly, you should see this webpage:
 
 ![](Resources/Kibana_Home.png)
+
+# your home page should have a net security or others like this ![building azure](https://user-images.githubusercontent.com/89087300/146103332-1fac9ab0-f158-4bf9-92f2-253158c8693d.PNG)
+
+__if its not connected right or your keys are not right you can encounter this error ![Capture](https://user-images.githubusercontent.com/89087300/146103465-305c1cac-92fa-445a-818e-f53b0e122c4b.PNG)
