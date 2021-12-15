@@ -226,4 +226,6 @@ If everything is working correctly, you should see this webpage:
 
 __if its not connected right or your keys are not right you can encounter this error ![Capture](https://user-images.githubusercontent.com/89087300/146103465-305c1cac-92fa-445a-818e-f53b0e122c4b.PNG)
 
-#what we are trying to do is create a diagram on how things connect heres how it should look <img width="988" alt="12HS" src="https://user-images.githubusercontent.com/89087300/146104051-2236c0db-f1f6-4042-90e7-5e18a8f1e675.png">
+#what we are trying to do is create a diagram on how things connect heres how it should look, if you want create another web that will be web 3 <img width="988" alt="12HS" src="https://user-images.githubusercontent.com/89087300/146104051-2236c0db-f1f6-4042-90e7-5e18a8f1e675.png">
+
+
